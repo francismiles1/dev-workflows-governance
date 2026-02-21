@@ -1,0 +1,18 @@
+{
+  "name": "dev-workflows-governance",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Francis Miles",
+    "url": "https://github.com/francismiles1"
+  },
+  "metadata": {
+    "description": "Governance layer for agentic coding - TIDY stage, human signoff, and operation-specific checklists"
+  },
+  "plugins": [
+    {
+      "name": "dev-workflows-governance",
+      "source": "./",
+      "description": "Governance layer for agentic coding - enforces TIDY stage, human signoff checkpoint, and operation-specific checklists"
+    }
+  ]
+}
