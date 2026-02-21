@@ -1,0 +1,32 @@
+{
+  "name": "dev-workflows-governance",
+  "version": "1.0.0",
+  "description": "Governance layer for Claude Code — signoff gates, TIDY stage, operation-specific checklists, and anti-rationalization hooks. Works with any stack.",
+  "author": {
+    "name": "Francis Miles",
+    "url": "https://github.com/francismiles1"
+  },
+  "homepage": "https://github.com/francismiles1/dev-workflows-governance",
+  "repository": "https://github.com/francismiles1/dev-workflows-governance.git",
+  "license": "MIT",
+  "keywords": [
+    "governance",
+    "signoff",
+    "quality-gates",
+    "anti-rationalization",
+    "workflow",
+    "safety",
+    "verification",
+    "checklists"
+  ],
+  "commands": [
+    "./commands/tidy.md",
+    "./commands/signoff.md",
+    "./commands/audit.md"
+  ],
+  "agents": [
+    "./agents/wrap-up.md",
+    "./agents/signoff.md",
+    "./agents/governance-audit.md"
+  ]
+}

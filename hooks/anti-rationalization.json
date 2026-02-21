@@ -1,0 +1,12 @@
+{
+  "Stop": [
+    {
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "Review the assistant's final response. Reject it if the assistant is rationalising incomplete work. Common patterns to reject: claiming issues are pre-existing or out of scope to avoid fixing them, saying there are too many issues to address, deferring work to a follow-up that was not requested, listing problems without fixing them and calling that done, skipping test or lint failures with excuses, treating checklist items as optional, showing the signoff block before wrap-up has reported STATUS: CLEAN, or declaring a task complete without running verification commands. If the response shows any of these patterns, respond {\"ok\": false, \"reason\": \"You are rationalising incomplete work. [specific issue]. Go back and complete it.\"}. If the work is genuinely complete and all verification steps have been run, respond {\"ok\": true}."
+        }
+      ]
+    }
+  ]
+}
