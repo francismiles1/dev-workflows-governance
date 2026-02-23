@@ -21,7 +21,7 @@ This was identified in production: CC skipped the wrap-up stage because it treat
 | `/signoff` command | Invoke signoff gate manually |
 | `/audit` command | Run governance audit (full or targeted: `/audit stripe`) |
 | `checklist-vs-rules` skill | Explains the pattern and how to apply it to your own CLAUDE.md |
-| `anti-rationalization.json` | Stop hook that catches premature victory declarations |
+| Anti-rationalization hook | Stop hook that catches premature victory declarations |
 
 ## Installation
 ```
@@ -51,7 +51,7 @@ With dev-workflows:
 
 ## Anti-Rationalization Hook
 
-Copy the Stop hook from `hooks/anti-rationalization.json` into your `.claude/settings.json` to catch premature victory declarations at the end of every session.
+The Stop hook in `hooks/hooks.json` is registered in the plugin manifest and activates automatically on installation. It catches premature victory declarations at the end of every response.
 
 ## Governance Audit
 
@@ -63,6 +63,10 @@ Run `/audit` once on a new project to generate operation-specific checklists for
 ```
 
 Checklists are written to `docs/checklists/` and reference actual files, commands, and services in your codebase.
+
+## Notes
+
+Components benefit from a project `CLAUDE.md` (the audit reads it for stack context, wrap-up checks it for lint/test commands) but all have fallbacks — the plugin works without one.
 
 ## Related
 

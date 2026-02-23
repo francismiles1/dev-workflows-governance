@@ -87,24 +87,7 @@ Every item must be specific to this project. No generic advice. Name the actual 
 
 **Important:** Replace "Risk level: HIGH/MEDIUM/LOW" with "If done incorrectly:" followed by a plain English description of what breaks. The label HIGH/MEDIUM/LOW describes the consequence of making this change badly — it does not mean the project is currently at risk. Write it so that's clear.
 
-## Phase 4: CLAUDE.md Update
-
-After generating the checklists, append the following section to `CLAUDE.md` (or create it if it doesn't exist):
-
-```markdown
-## Governance Checklists
-
-Your project is stable. These checklists exist to keep it that way when making specific types of changes.
-
-For the operations listed below, open and work through the relevant checklist before making any changes. The checklist tells the agent exactly what to do and what to verify — without it, easy-to-miss steps get skipped.
-
-<list of generated checklists with one-line descriptions>
-
-Rules get forgotten. Checklists get executed. Always open and work through the
-relevant checklist item by item — do not rely on memory.
-```
-
-## Phase 5: Audit Report
+## Phase 4: Audit Report
 
 Output a summary in this format:
 
@@ -131,11 +114,10 @@ Checklists created:
 
   ...
 
-CLAUDE.md:  Updated ✓
-
-Recommendation: Reference these checklists in your MEMORY.md or equivalent
-under a "MANDATORY CHECKLISTS" section so future sessions surface them
-automatically before relevant operations begin.
+Recommendation: Add a "Governance Checklists" section to your CLAUDE.md
+referencing these checklists, so future sessions surface them automatically.
+CLAUDE.md is loaded every turn — keep the reference brief (a table with
+checklist path, trigger, and one-line consequence).
 ```
 
 ## Critical Rules

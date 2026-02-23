@@ -15,8 +15,7 @@ The audit will:
 1. Read project files to understand the stack, services, and deployment targets
 2. Identify 3-6 operation types most likely to cause silent failures or hard-to-reverse damage
 3. Write executable checklists to docs/checklists/
-4. Update CLAUDE.md with references to the generated checklists
 
-Output: docs/checklists/<operation>.md files, plus CLAUDE.md update.
+Output: docs/checklists/<operation>.md files, plus a recommendation for CLAUDE.md referencing.
 
 Every checklist item names actual files, commands, and services found in this codebase. Generic advice is not produced.
